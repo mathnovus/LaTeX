@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{t1enc}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.markings}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amssymb}
+\usepackage{ragged2e}
+\color{white}
+\definecolor{Velvety Red}{RGB}{124,10,2}
+
+\begin{document}
+\Huge
+\pagecolor{Velvety Red}
+\begin{equation}
+    \cos{\frac{\pi}{5}} \text{ =} \text{ ?} \nonumber
+\end{equation}
+\newline
+\begin{center}
+Swipe For Solution $\Rightarrow$
+\end{center}
+\newpage
+\normalsize
+\noindent Let's assign an arbitrary constant such as $\gamma$ to be equal to $\frac{\pi}{5}$.
+\begin{eqnarray}
+\gamma = \frac{\pi}{5} \to
+5\gamma\nonumber \\ 3\gamma = \pi -2\gamma
+\end{eqnarray}
+We will now apply $\sin{}$ on both sides of  $(1)$; we can apply cosine if we want but the addition formulas for $cos{}$ give us squares which are somewhat difficult to deal with which is why we will start with $sin{}$ functions and work our way towards and equation we can express in terms of $cos{\gamma}$
+\begin{eqnarray}
+\sin{(3\gamma)} = \sin{(\pi-2\gamma)}\nonumber
+\end{eqnarray}
+We can write $\sin{(\pi-2\gamma)}$ using its' addition formula which will give us:
+\begin{eqnarray}
+\sin{(3\gamma)} = \sin{(\pi)}\cos{(2\gamma)}-\cos{(\pi)}\sin{(2\gamma)}\nonumber
+\end{eqnarray}
+\text{We know that $\sin{(\pi)}$ = 0 and $\cos{(\pi)}$ = -1 so our equation simplifies to:}
+\begin{eqnarray}
+\sin{(3\gamma)} = \sin{(2\gamma)} \nonumber\\
+\sin{(\gamma + 2\gamma)} = \sin{(2\gamma)}\nonumber
+\end{eqnarray}
+which can be written as:
+\begin{eqnarray}
+\sin{(\gamma)}cos{(2\gamma)}+\sin{(2\gamma)}\cos{(\gamma)}=2\sin{(\gamma)}\cos{(\gamma)}\nonumber
+\end{eqnarray}
+factoring out and cancelling a factor of $\sin{(\gamma)}$ gives us:
+\begin{eqnarray}
+\cos{(2\gamma)} + \frac{\sin{(2\gamma)}\cos{(\gamma)}}{\sin{(\gamma)}}=2\cos{(\gamma)}\nonumber
+\end{eqnarray}
+Breaking down $\cos{(2\gamma)} \text{ and } \sin{(2\gamma)}$ by their addition formulas will take us closer to our goal of writing everything in terms of $\cos{(\gamma)}$.
+\begin{eqnarray}
+\cos^{2}{(\gamma)}-\sin^{2}{(\gamma)}+ \frac{2\sin{(\gamma)}\cos^2{(\gamma)}}{\sin{(\gamma)}}=2\cos{(\gamma)}\nonumber\\
+\cos^2{(\gamma)} -1+\cos^2{(\gamma)} + 2\cos^2{(\gamma)} = 2\cos{(\gamma)}\nonumber
+\end{eqnarray}
+We can equate a variable such as $\lambda$ to be equal to $\cos{(\gamma)}$ and under this our equation becomes:
+\begin{eqnarray}
+4\lambda^{2} - 2\lambda -1 = 0\nonumber
+\end{eqnarray}
+\newpage
+\noindent Solving this quadratic gives us 2 branches but we will consider the positive solution only as $\cos{(\theta)}\geq0$ in the interval from $0\to\frac{\pi}{2}$ and $\frac{\pi}{5}$ is in this interval. 
+\begin{eqnarray}
+\lambda^2 - \frac{1}{2}\lambda - \frac{1}{4} = 0\nonumber
+\end{eqnarray}
+\begin{eqnarray}
+\lambda^2 - \frac{1}{2}\lambda +\frac{1}{16} = \frac{1}{4} + \frac{1}{16}\to
+\left(\lambda-\frac{1}{4}\right)^{2} = \frac{5}{16}\nonumber
+\end{eqnarray}
+\begin{eqnarray}
+\left(\lambda-\frac{1}{4}\right) = \frac{\sqrt{5}}{4} \to
+\lambda = \frac{\sqrt{5}}{4} + \frac{1}{4}\nonumber
+\end{eqnarray}
+\begin{eqnarray}
+\lambda = \frac{1+\sqrt{5}}{4} \to \lambda = \frac{\phi}{2}\nonumber
+\end{eqnarray}
+$\therefore$ $\cos{(\frac{\pi}{5})}$ equals $\frac{\phi}{2}$\newline
+\newpage
+\Huge
+\begin{equation}
+    \cos{\left(\frac{\pi}{5}\right)} = \frac{\phi}{2} \nonumber
+\end{equation}
+\end{document}
